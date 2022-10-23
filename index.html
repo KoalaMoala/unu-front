@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="board">        
+    </div>
+    <div class="action">
+        <button>Draw</button>
+        <button>Unu</button>
+    </div>
+    <div class="hand">
+        <div class="card card-0"></div>
+        <div class="card card-4"></div>
+        <div class="card card-15"></div>
+    </div>
+</div>
+
+</body>
+</html>
+<script>
+    const customHtml = Array(50).fill('<div></div>')
+    customHtml[24] = '<div><div class="card card-4 play-stack"></div></div>'
+    customHtml[25] = '<div><div class="card hidden"></div></div>'
+    document.getElementsByClassName('board')[0].innerHTML = customHtml.join('')
+</script> 
